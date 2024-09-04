@@ -1,0 +1,258 @@
+/* Подготовка стилизации */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  max-width:900px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Конец подготовки */
+
+/* Главное меню стилизация */
+
+header {
+  background-color:#086788;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content:center;
+  gap:70px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap:13px;
+  padding:40px 0 0;
+}
+
+.header-subtitle {
+  max-width:300px;
+  color:#A5D936;
+}
+
+.header-description {
+  font-size:18px;
+  width:270px;
+  color:#fff;
+  font-weight:300;
+}
+
+.header-btn {
+  margin-bottom:47px;
+}
+
+.btn {
+  width:185px;
+  background-color:#A5D936; 
+  height:36px;
+  color:#086788;
+  font-weight:700;
+  text-decoration: underline;
+}
+
+.headerimg {
+}
+
+.imgman {
+  position:relative;
+  top:30px;
+}
+
+.main__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:20px 0;
+  padding-left:110px;
+}
+
+.main-text {
+  color:#086788;
+  font-size:20px;
+  margin-bottom:14px;
+}
+
+.main-description {
+  display: flex;
+  flex-direction: column;
+  margin-left:10px;
+  margin-bottom:24px;
+}
+
+.text-desc {
+  color: #086788;
+  font-size:20px;
+}
+
+.main-subtitle {
+  margin-bottom: 35px;
+}
+
+li {
+  list-style-image: url(./img/Rectangle\ 29.svg);
+}
+
+.main-li1, .main-li2, .main-li3 {
+  list-style-image: url(./img/Rectangle\ 30.svg);
+}
+
+
+ .main-title {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+ }
+
+ aside {
+  background:#F2F3F2;
+  margin-bottom:38px;
+ }
+
+ .title-main {
+  color:#086788;
+ }
+
+ .subtitle {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+ }
+
+ .text {
+  color: #086788;
+  font-weight: 600;
+  font-size:14px;
+  text-decoration: underline;
+ }
+
+ .btn-main {
+  background:#A5D936;
+  width:340px;
+  height:36px;
+ }
+
+ .titlebtn {
+  display: flex;
+ }
+
+ .main-block {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+ }
+
+ .main-block-text {
+  font-weight:600;
+ }
+
+ footer {
+  background-color: #086788;
+ }
+
+ .footer__wrapper {
+ }
+
+.footer-main {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.foter-logo {
+  display: flex;
+  padding:27px;
+  gap: 15px;
+}
+
+.logo-footer {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+@media (max-width:900px) and (min-width:375px) {
+  .headerimg {
+    display: none;
+  }
+
+  .header__wrapper {
+    display: flex;
+    text-align: center;
+  }
+
+  .header-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .main__wrapper {
+  }
+
+  .main-description {
+    position: relative;
+    right:50px;
+  }
+
+  .mobile-adaption {
+    position: relative;
+    right:50px;
+  }
+
+  .main-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titlebtn {
+    position:relative;
+    right:50px;
+  }
+
+  .main-block {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-main {
+    width:190px;
+  }
+
+  .main-title {
+    position: relative;
+    right:50px;
+  }
+
+  .titlebtn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .group {
+    display: none;
+  }
+}
